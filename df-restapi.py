@@ -71,7 +71,9 @@ def run(argv=None):
                               project='cf-fs-project-299907',
                               job_name='dataflowrestapi',
                               temp_location='gs://bigquerytemp_dataflow',
-                              region='us-central1')
+                              region='us-east1',
+                              network='acn-cio-project-vpc',
+                              subnetwork='regions/us-east1/subnetworks/us-east1-public-subnet')
     google_cloud_options = options.view_as(SetupOptions)
     google_cloud_options.save_main_session = True
     with beam.Pipeline(argv=pipeline_args, options=google_cloud_options) as p:
