@@ -4,10 +4,6 @@ import requests
 
 
 def get_revisions():
-    # azdevopsUser = 'mytest'
-    # azdevopsPass = '4zhrpejm37vabjis67lzxf3fgxgfrhhzjyfd6mhbjv65mkgulfxa'
-    azdevopsUser = 'A107038DIRNBO'
-    azdevopsPass = 'udtfaf733vg5sb4qt3jzoqreoqo3s3ujx2s7ssydz6vpyu2reg3a'
     az_uri = 'https://dev.azure.com/{organization}/'
     az_project = '{project}'
     # uri
@@ -32,8 +28,6 @@ def get_revisions():
 
 
 def get_capacities():
-    azdevopsUser = 'A107038DIRNBO'
-    azdevopsPass = 'udtfaf733vg5sb4qt3jzoqreoqo3s3ujx2s7ssydz6vpyu2reg3a'
     azdevopsURL = 'https://dev.azure.com/{}/{}/{}/_apis/work/teamsettings/iterations/d2d2841a-30a1-4469-9568-2b57cf690024/capacities?api-version=6.1-preview.2'
     # query parameter
     params = {"api-version": "6.1-preview.3"}
@@ -55,8 +49,6 @@ def get_capacities():
 
 
 def get_iterations():
-    azdevopsUser = 'A107038DIRNBO'
-    azdevopsPass = 'udtfaf733vg5sb4qt3jzoqreoqo3s3ujx2s7ssydz6vpyu2reg3a'
     azdevopsURL = 'https://dev.azure.com/{}/{}/{}/_apis/work/teamsettings/iterations?api-version=6.1-preview.1'
     # query parameter
     params = {"api-version": "6.1-preview.3"}
